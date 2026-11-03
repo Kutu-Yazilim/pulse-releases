@@ -6,6 +6,30 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 1.6.0</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.0</link>
+      <pubDate>Tue, 03 Nov 2026 16:22:39 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 1.6.0 — in-app updates
+- fix(about): public links go to pulse-releases; drop the private source link
+- build(updates): pin Sparkle 2.10.1 for project-level builds too
+- feat(about): Updates section on the About page
+- feat(release): publish on pulse-releases with a signed Sparkle feed
+- feat(updates): Sparkle 2 updater with gentle reminders and update-safe quit
+- docs(ai): builder-check calls and two open questions
+- docs(ai): draft design to compete with Sentient OS (awaiting user)
+
+SHA-256: `00466e4b267342c72ef8228558131f7ac91ad9b8d3a453af208ca882c00e11fa`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v1.6.0/Pulse-1.6.0.dmg" length="36095491" type="application/octet-stream" sparkle:edSignature="bBCThXOXNg7a1fkAvgtAyP+t+q68ls1L6oA5/l3586RmbvAmECAWZ0qvk4O/WjCireZMYSlQ6bKLpMzqEISkAw=="/>
+    </item>
+    <item>
       <title>Pulse 1.5.1</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.5.1</link>
       <pubDate>Tue, 03 Nov 2026 15:53:52 +0000</pubDate>
