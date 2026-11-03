@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Pulse</title>
+    <link>https://github.com/Kutu-Yazilim/pulse-releases</link>
+    <description>Pulse for macOS: release feed for in-app updates.</description>
+    <language>en</language>
+    <item>
+      <title>Pulse 1.5.1</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.5.1</link>
+      <pubDate>Tue, 03 Nov 2026 15:53:52 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 1.5.1
+- fix(tools): centre sidebar headings between visible hairlines
+- fix(tool): build_dmg defaults to pubspec's version, not 1.0.0
+
+SHA-256: `9e64f9fae620dbb0f2ef6200c11ae173152e5a53443a290715d7b298959d2fef`
+
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v1.5.1/Pulse-1.5.1.dmg" length="35108149" type="application/octet-stream" sparkle:edSignature="DRH1A15A1IvVzKJTvBtQgwhDUhgoh2wiluUj0oLq99YTqbBkc4aXXsq23mnkgh40uCPcpKaZHmcLiCZLSbCjDw=="/>
+    </item>
+  </channel>
+</rss>
