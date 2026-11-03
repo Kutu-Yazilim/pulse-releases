@@ -11,7 +11,7 @@ code is private.
 Get the latest DMG from [Releases](https://github.com/Kutu-Yazilim/pulse-releases/releases/latest),
 open it and drag Pulse to Applications.
 
-Requires macOS 26 on Apple silicon.
+Requires macOS 26 or later (Apple silicon and Intel).
 
 ### First launch
 
