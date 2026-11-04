@@ -6,6 +6,25 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 1.6.3</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.3</link>
+      <pubDate>Wed, 04 Nov 2026 12:33:13 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.6.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 1.6.3 — Pulse chat runs without asking, Caps Lock crash fixed
+- fix(native): read media-key fields without NSEvent on tap threads
+- feat(agent): Auto access runs without asking
+
+SHA-256: `e92838b568b7ca9db4bc5a300b8baef1653e82bc2b4d519a10f5d2c17d1fb606`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v1.6.3/Pulse-1.6.3.dmg" length="36126882" type="application/octet-stream" sparkle:edSignature="/KEre/XD+DFKDEisvyJuBMMUbB6X99rB1UPSABPNRgC3ZSylg/JmpNI6wsL0PBkdLA/wvTq87avldXkdCe4FBg=="/>
+    </item>
+    <item>
       <title>Pulse 1.6.2</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.2</link>
       <pubDate>Wed, 04 Nov 2026 11:24:13 +0000</pubDate>
