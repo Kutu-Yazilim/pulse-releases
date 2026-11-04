@@ -6,6 +6,24 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 1.6.2</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.2</link>
+      <pubDate>Wed, 04 Nov 2026 11:24:13 +0000</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 1.6.2 — stop the nightly run whenever you want
+- fix(knowledge): let the user stop a nightly run, and never restart it on its own
+
+SHA-256: `bb0b7a9e52a00fcd0195fefc9ea820513d77c5f0b855615d0a9ccbfa6572c792`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v1.6.2/Pulse-1.6.2.dmg" length="36060991" type="application/octet-stream" sparkle:edSignature="1Q3sk3I9/VnzP1wJGmxxKjpCwrf5pSzR5Ae2bVMazf6iCbBq6dwwBkfzl5ccW6vyU2vBNxcvjKBDeZqKQHUhCQ=="/>
+    </item>
+    <item>
       <title>Pulse 1.6.1</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.1</link>
       <pubDate>Wed, 04 Nov 2026 07:53:00 +0000</pubDate>
