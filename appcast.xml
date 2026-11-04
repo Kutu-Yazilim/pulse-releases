@@ -6,6 +6,26 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 1.6.1</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.1</link>
+      <pubDate>Wed, 04 Nov 2026 07:53:00 +0000</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 1.6.1 — better nightly notes about people, lighter memory use
+- fix(knowledge): cap Pulse's Ollama memory during nightly runs
+- fix(knowledge): start Pulse's Ollama before a nightly run
+- fix(knowledge): keep people pages about people, not the user's work
+
+SHA-256: `22f542ccf4541fb88eb0839990179298f03609f4ee8fd4561447f96624526482`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v1.6.1/Pulse-1.6.1.dmg" length="36116007" type="application/octet-stream" sparkle:edSignature="Ipqu3GPdhoB7yz368gQqJaqLc7DLZ2wLALZz9oP0m1VM2V/DiyEYh9i37MBNPwuOXSwrYV2zcAN0bOpKZTENCg=="/>
+    </item>
+    <item>
       <title>Pulse 1.6.0</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.0</link>
       <pubDate>Tue, 03 Nov 2026 16:22:39 +0000</pubDate>
