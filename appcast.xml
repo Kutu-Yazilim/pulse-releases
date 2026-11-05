@@ -6,6 +6,54 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 2.0.0</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.0.0</link>
+      <pubDate>Thu, 05 Nov 2026 10:37:48 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 2.0.0 — Knowledge 2: two-tier learning, Brief reminders, Double Tap, knowledge graph
+- fix(graph): no twin dot for an entity that has its own page
+- feat(graph): canvas-shaped ring, fit on open, night-sky look
+- feat(graph): co-source edges and entity satellites from the knowledge store
+- fix(knowledge): repo window keys hash the folder path
+- fix(knowledge): engine safety — retryable triage failures, no page tails lost, deny list on every cloud path
+- fix(brief): deny list on every cloud send, live switch, failed builds keep cards, bounded actions, calendar snapshots supersede, atomic notification replace
+- fix(knowledge): a capped run gives every source a turn
+- fix(knowledge): no reminders from instructions to coding assistants
+- feat(brief): morning look starts the model only when a build is needed
+- feat(brief): reminders judge, verify pass, local picker, cards and notifications
+- test(knowledge): read-failure note carries the error kind only
+- fix(knowledge): name a source whose read fails in the nightly notes
+- test(knowledge): set literal in the T3 no-repeat check
+- fix(draft): timestamped tap detection, preview closes on leaving, re-checked insert, honest clipboard restore
+- fix(knowledge): per-group Gmail frontiers, T3 open turns and agent prompts, mail order and dedupe, visible read failures
+- fix(agent): send Claude CLI prompts on stdin, not argv
+- docs(knowledge): when the runner unloads the local model
+- fix(knowledge): redact summaries again for the cloud, guard stuck cursors
+- feat(knowledge): learning engine v2: entities, synthesis, runner and the switch
+- feat(graph): Knowledge › Graph tab — painter, hover/click/pan/zoom, search, folder chips, side panel
+- feat(vault): clickable wiki links and a Backlinks section in the reader
+- feat(knowledge): summary store, local model clients and window triage
+- feat(graph): graph, layout cache, backlinks and view-state providers
+- feat(graph): wiki link resolution, graph build and seeded force layout
+- refactor(knowledge): name window separator widths
+- refactor(draft): name the native relay arguments and skip reasons
+- feat(native): calendar snapshot with reminders, sorted and collapsed
+- feat(knowledge): source windows with two-frontier cursors
+- feat(draft): native Double Tap detector, context reader, preview and paste
+- feat(draft): Double Tap drafting service, retrieval, prompt and settings card
+- docs: Knowledge 2 spec (Sentient OS parity and beyond)
+
+SHA-256: `6b664f2d7abcf010eceee9ed0918c1a7134bdd9f600375a14e55ecc11e7981c5`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.0.0/Pulse-2.0.0.dmg" length="36924272" type="application/octet-stream" sparkle:edSignature="1fCF0Q29WautRhtZNVhCQuQLeVk/XWU267frPe2bGfNUNjdz+NyElX12VcK8STnDnYgj/O2zx83hUGYPvFypAw=="/>
+    </item>
+    <item>
       <title>Pulse 1.6.3</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v1.6.3</link>
       <pubDate>Wed, 04 Nov 2026 12:33:13 +0000</pubDate>
