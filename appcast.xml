@@ -6,6 +6,36 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 2.1.0</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.1.0</link>
+      <pubDate>Thu, 05 Nov 2026 18:07:28 +0000</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 2.1.0 — people and relationships, per-person Double Tap with the swirl, Brief knows your plans, 8 GB memory limit
+- fix(knowledge): re-arm the nightly hour and wake after it fires; a held start does not cancel the model download
+- feat(knowledge): Pulse stays under its memory limit with its model, and no surprise runs
+- feat(draft): a dramatic Double Tap swirl on the reply box itself
+- feat(brief): pin the user's own commitments due within 48 h; listings retire
+- feat(calendar): tell the user's plans from public listings; exams are deadlines
+- feat(knowledge): relation hints reach synthesis, unnamed chats stay out of the people digest
+- feat(knowledge): people pages and the user's circle from chat stats, Learn everything now
+- feat(draft): read the chat header texts above the reply field for the recipient
+- feat(draft): per-recipient Double Tap voice from the user's own chat messages
+- feat(knowledge): DM and group triage keep relationships, record group nature, re-read old chat windows once
+- feat(knowledge): contact stats from WhatsApp and Messages, contacts table, triage prompt versions
+- docs: Knowledge 2.1 calibration spec (people, per-recipient Double Tap, Brief)
+- Add Pulse 2.0.0 landing page and Impeccable design system
+
+SHA-256: `c90ddf953e47a366a14787d71293a556cda599ec7c43e747672b0d06c7224aa2`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.1.0/Pulse-2.1.0.dmg" length="36919418" type="application/octet-stream" sparkle:edSignature="IQshAdg6szeLvWkJBedV9dHlzFXjqVMfju40TbGgzjqnnL3O7KqIbIhWqiGPrOuQCxn9v+liYSTKrbo5/emNAw=="/>
+    </item>
+    <item>
       <title>Pulse 2.0.0</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.0.0</link>
       <pubDate>Thu, 05 Nov 2026 10:37:48 +0000</pubDate>
