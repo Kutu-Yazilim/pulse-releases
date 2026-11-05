@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse 2.0 for macOS 26 — Live Telemetry, Notch, AI Limits &amp; Knowledge Vault</title>
+  <meta name="description" content="Pulse 2.0 is a native macOS 26 companion joining live Apple Silicon thermals, threshold AI agents, Dual Claude &amp; T3 Code usage, a dynamic MacBook Notch, developer disk map cleaner, and the local-first Knowledge 2 vault.">
+  <link rel="icon" type="image/png" href="./assets/pulse_mark.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Clean, Slim Site Navigation Bar -->
+  <header class="site-navbar" aria-label="Site Navigation">
+    <div class="site-navbar-inner">
+      <div class="site-brand-group">
+        <a href="#top" class="brand-anchor">
+          <img src="./assets/pulse_mark.png" alt="Pulse emblem" width="22" height="22">
+          <span>Pulse</span>
+        </a>
+        <span class="nav-version-pill tabular">v2.0.0 · macOS 26</span>
+      </div>
+
+      <nav aria-label="Primary sections">
+        <ul class="menubar-nav">
+          <li><a href="#observatory">Observatory</a></li>
+          <li><a href="#knowledge-vault">Knowledge 2</a></li>
+          <li><a href="#disk-cleaner">Disk Map</a></li>
+          <li><a href="#tools-roster">20+ Tools</a></li>
+          <li><a href="#permissions">Privacy &amp; MCP</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-navbar-actions">
+        <a class="nav-gh-link" href="https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.0.0">Release Notes</a>
+        <a class="nav-cta-pill" href="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.0.0/Pulse-2.0.0.dmg">Download .dmg</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell" id="top">
+    <!-- First Viewport: Thesis + Live Thermal & AI Observatory + Interactive Heat-Shift Scrubber -->
+    <section class="first-viewport" id="observatory">
+      <div class="command-deck">
+        <div class="hero-thesis-col">
+          <div>
+            <h1>Your Mac's pulse, limits, and memory in one glass surface.</h1>
+            <p class="hero-lead">
+              Pulse 2.0 replaces fragmented menu bar monitors, notch toys, storage cleaners, and token counters with one native macOS 26 companion. Track per-core Apple Silicon thermals, wake an AI diagnostic agent when thresholds hold, monitor every Claude Code and Codex login beside your T3 Code threads, and grow a local-first Markdown vault of your life in <code class="tabular">~/Pulse Knowledge</code>.
+            </p>
+          </div>
+
+          <div class="conversion-cluster">
+            <div class="cta-button-row">
+              <a class="btn-dmg" href="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.0.0/Pulse-2.0.0.dmg">
+                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Pulse 2.0.0 DMG</span>
+              </a>
+
+              <button type="button" class="btn-brew" id="copy-brew-btn" data-command="brew install --cask kutuyazilim/tap/kutu-pulse">
+                <span>brew install --cask kutuyazilim/tap/kutu-pulse</span>
+                <span class="brew-copy-badge" id="brew-copy-status">Copy</span>
+              </button>
+            </div>
+
+            <div class="release-meta-strip">
+              <span>v2.0.0 (Build 12)</span>
+              <span>macOS 26+ (Apple Silicon &amp; Intel)</span>
+              <span>Signed Sparkle Updates</span>
+              <span>MIT License · Zero Telemetry</span>
+            </div>
+
+            <div class="Subsystem-jump-pills">
+              <a class="jump-pill" href="#knowledge-vault">Explore Knowledge 2 Night-Sky Graph</a>
+              <a class="jump-pill" href="#disk-cleaner">Inspect 48.2 GB Disk Block Map</a>
+              <a class="jump-pill" href="#tools-roster">Browse All 20+ Native Mac Tools</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero MacBook Display Frame with Hardware Notch & Live Telemetry Console -->
+        <aside class="observatory-console hero-display-frame" aria-label="Interactive MacBook Notch and Live Telemetry Console">
+          <!-- Simulated MacBook Top Screen Rim: macOS Menu Bar + Centered Hardware Notch -->
+          <div class="hero-screen-top">
+            <div class="hero-menubar-row">
+              <div class="hero-menubar-left">
+                <span class="apple-glyph" aria-hidden="true">&#63743;</span>
+                <strong>Pulse</strong>
+              </div>
+
+              <!-- Centered Hardware Notch inside the Hero MacBook Display -->
+              <div class="notch-shell" role="region" aria-label="Interactive MacBook Notch">
+                <div class="notch-top-row">
+                  <div class="camera-lens-group">
+                    <span class="camera-housing-dot" aria-hidden="true"></span>
+                    <span>Notch</span>
+                  </div>
+                  <div class="notch-tabs" role="tablist" aria-label="Notch surface modes">
+                    <button type="button" class="notch-tab" role="tab" aria-selected="true" data-notch-tab="lyrics">Lyrics</button>
+                    <button type="button" class="notch-tab" role="tab" aria-selected="false" data-notch-tab="thermals">Thermals</button>
+                    <button type="button" class="notch-tab" role="tab" aria-selected="false" data-notch-tab="agents">Agents</button>
+                    <button type="button" class="notch-tab" role="tab" aria-selected="false" data-notch-tab="shelf">Shelf</button>
+                  </div>
+                </div>
+
+                <div class="notch-stage">
+                  <!-- Pane 1: Nusa-style LRCLIB Synced Lyrics -->
+                  <div class="notch-pane is-active" id="notch-pane-lyrics" role="tabpanel">
+                    <div class="notch-track">
+                      <img src="./assets/notch_cover.png" alt="Album sleeve topographic waveform" width="30" height="30">
+                      <div class="track-meta">
+                        <strong>Radiohead · LRCLIB</strong>
+                        <span class="lyric-active" id="live-lyric-line">&#9834; Everything, in its right place</span>
+                      </div>
+                    </div>
+                    <span class="notch-wave-pill tabular">LIVE</span>
+                  </div>
+
+                  <!-- Pane 2: Live Sensor Wing -->
+                  <div class="notch-pane" id="notch-pane-thermals" role="tabpanel">
+                    <div class="notch-wing-grid">
+                      <div class="notch-mini-stat">
+                        <span>CPU Die</span>
+                        <strong id="notch-cpu-readout">64°C · 19.4W</strong>
+                      </div>
+                      <div class="notch-mini-stat">
+                        <span>RAM + Swap</span>
+                        <strong id="notch-ram-readout">68% · 1.2G</strong>
+                      </div>
+                      <div class="notch-mini-stat">
+                        <span>Net I/O</span>
+                        <strong>48 MB/s</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pane 3: Active AI Agents & Limits -->
+                  <div class="notch-pane" id="notch-pane-agents" role="tabpanel">
+                    <div class="notch-wing-grid">
+                      <div class="notch-mini-stat">
+                        <span>Claude 1/2</span>
+                        <strong>74% · 91%</strong>
+                      </div>
+                      <div class="notch-mini-stat">
+                        <span>Codex / AG</span>
+                        <strong>88% · 95%</strong>
+                      </div>
+                      <div class="notch-mini-stat">
+                        <span>Vault AI</span>
+                        <strong id="notch-agent-state">Idle · 03:00</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pane 4: File Drop Shelf -->
+                  <div class="notch-pane" id="notch-pane-shelf" role="tabpanel">
+                    <div class="shelf-dropzone">
+                      <div class="shelf-chips" id="shelf-chip-list">
+                        <span class="shelf-chip">Pulse-2.0.0.dmg</span>
+                        <span class="shelf-chip">appcast.xml</span>
+                      </div>
+                      <button type="button" class="t3-thread-btn" id="btn-add-shelf-file">+ Drop</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-menubar-right">
+                <span class="menubar-item-pill" title="Menu Bar Live CPU &amp; Power">
+                  <span id="menubar-temp-pill">64°C · 19.4W</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-screen-body">
+            <div class="console-header">
+              <h2>Live Telemetry &amp; Multi-Account Command</h2>
+              <span class="status-badge" id="observatory-health-badge">Simulated Live · 64°C Nominal</span>
+            </div>
+
+          <div class="sensor-clusters">
+            <!-- Sensor Bay 1: Apple Silicon Cores & Power -->
+            <div class="instrument-bay">
+              <div class="bay-title-row">
+                <strong>Apple Silicon P/E Cores</strong>
+                <span class="tabular" id="console-temp-watt">64°C avg · 19.4W</span>
+              </div>
+              <div class="core-bars" id="core-bars-container" aria-label="Per-core temperature bars">
+                <div class="core-bar"><div class="core-bar-fill" style="height: 58%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 66%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 74%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 62%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 54%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 49%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 44%"></div></div>
+                <div class="core-bar"><div class="core-bar-fill" style="height: 52%"></div></div>
+              </div>
+              <div class="sensor-readouts">
+                <span id="console-hottest-core">Hottest P3: 71°C</span>
+                <span id="console-ram-swap">RAM 68% · Swap 1.2 GB</span>
+              </div>
+              <div class="process-hog-row">
+                <span id="top-hog-label">Top Hog: git-worktree-index (4.8W)</span>
+                <button type="button" class="btn-kill" id="btn-kill-hog">Kill Process</button>
+              </div>
+            </div>
+
+            <!-- Sensor Bay 2: Dual Claude + Codex + Antigravity Limits -->
+            <div class="instrument-bay">
+              <div class="bay-title-row">
+                <strong>AI Subscription Windows</strong>
+                <span class="tabular">4 Active Logins</span>
+              </div>
+              <div class="usage-meters">
+                <div class="usage-row">
+                  <span>Claude Max #1</span>
+                  <div class="usage-track"><div class="usage-fill" style="width: 74%"></div></div>
+                  <span class="tabular">74%</span>
+                </div>
+                <div class="usage-row">
+                  <span>Claude Pro #2</span>
+                  <div class="usage-track"><div class="usage-fill" style="width: 91%"></div></div>
+                  <span class="tabular">91%</span>
+                </div>
+                <div class="usage-row">
+                  <span>Codex (ChatGPT)</span>
+                  <div class="usage-track"><div class="usage-fill honey" style="width: 88%"></div></div>
+                  <span class="tabular">88%</span>
+                </div>
+                <div class="usage-row">
+                  <span>Antigravity</span>
+                  <div class="usage-track"><div class="usage-fill cornflower" style="width: 95%"></div></div>
+                  <span class="tabular">95%</span>
+                </div>
+              </div>
+              <div class="sensor-readouts">
+                <span>5h &amp; 7d windows</span>
+                <span>Reads ~/.claude &amp; Keychain</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- T3 Code Thread Deep-Link Strip -->
+          <div class="t3-threads-strip">
+            <div>
+              <strong>Recent T3 Code Threads</strong>
+              <span class="tabular" id="t3-open-feedback" style="margin-left: 8px; color: var(--ink-warm);">Click a thread to jump into T3 Code</span>
+            </div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+              <button type="button" class="t3-thread-btn" data-t3-thread="Pulse-tools2 · feat/knowledge2">Pulse-tools2 / knowledge2</button>
+              <button type="button" class="t3-thread-btn" data-t3-thread="SentientOS · vault-sync">SentientOS / vault-sync</button>
+            </div>
+          </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Signature Interaction: Thermal Heat-Shift & Threshold Agent Scrubber -->
+      <div class="thermal-scrubber-bar" aria-label="Interactive Thermal Heat-Shift and Threshold Trigger Simulator">
+        <div class="scrubber-controls">
+          <div class="scrubber-label-row">
+            <h2>Scrub Simulated Mac Thermal Load &amp; Threshold Trigger</h2>
+            <div class="scrubber-presets">
+              <button type="button" class="preset-chip" data-temp-preset="44">Idle 44°C</button>
+              <button type="button" class="preset-chip is-active" data-temp-preset="64">Compile 64°C</button>
+              <button type="button" class="preset-chip" data-temp-preset="84">Trip RAM &gt; 80% (84°C)</button>
+              <button type="button" class="preset-chip" data-temp-preset="94">Thermal Peak 94°C</button>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            class="thermal-range"
+            id="thermal-load-slider"
+            min="38"
+            max="96"
+            value="64"
+            aria-label="Simulated CPU temperature in Celsius"
+          >
+
+          <div class="scrubber-scale">
+            <span>38°C Quiet Burgundy</span>
+            <span>64°C Garnet Load</span>
+            <span>80°C Agent Wake Threshold (RAM &gt; 80%)</span>
+            <span>96°C Thermal Amber Shift</span>
+          </div>
+        </div>
+
+        <div class="agent-trigger-console" id="agent-trigger-box">
+          <div class="agent-console-top">
+            <strong id="agent-trigger-title">Threshold Trigger Armed: RAM &gt; 80% for 30s</strong>
+            <span id="agent-trigger-state">STANDBY · 68% RAM</span>
+          </div>
+          <p class="agent-console-body" id="agent-trigger-desc">
+            Drag the thermal scrubber past 80°C (or click "Trip RAM &gt; 80%") to watch the page's Kasi palette shift toward thermal amber and wake Pulse's diagnostic Claude agent.
+          </p>
+          <div class="agent-action-btns" id="agent-action-row" hidden>
+            <button type="button" class="btn-approve-agent" id="btn-approve-remediation">Approve: Prune Stuck Worktree &amp; Free 14.8 GB</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Knowledge 2 Observatory (~/Pulse Knowledge) -->
+    <section class="surface-section" id="knowledge-vault">
+      <div class="section-header-bar">
+        <div class="section-header-copy">
+          <h2>A Git-backed Markdown vault that learns your Mac while raw chats stay on-device.</h2>
+          <p>
+            Knowledge 2 (<code class="tabular">~/Pulse Knowledge</code>) runs a two-tier learning pipeline across your last 90 days of WhatsApp (direct vs. group), Apple Mail, Messages, Calendar (-7d to +31d), Reminders, T3 Code threads, and developer folders. Switch between <strong>This Mac only</strong> and <strong>Cloud model</strong> at any time.
+          </p>
+        </div>
+      </div>
+
+      <!-- Privacy Switch (Bilgi › Kaynaklar) -->
+      <div class="knowledge-privacy-bar">
+        <div>
+          <strong id="privacy-mode-headline">Active Mode: This Mac Only (Apple On-Device / Ollama Gemma)</strong>
+          <p id="privacy-mode-detail" style="font-size: 0.85rem; color: var(--ink-soft);">
+            100% local execution. Summarizes chats with per-chat checkpoint resume and writes Markdown pages directly to ~/Pulse Knowledge without network calls.
+          </p>
+        </div>
+        <div class="privacy-toggle-group" role="group" aria-label="Knowledge 2 privacy boundary switch">
+          <button type="button" class="privacy-btn" aria-pressed="true" data-privacy-mode="local">This Mac Only</button>
+          <button type="button" class="privacy-btn" aria-pressed="false" data-privacy-mode="cloud">Cloud Model (Summaries Only)</button>
+        </div>
+      </div>
+
+      <div class="knowledge-workspace">
+        <div class="knowledge-stage-panel">
+          <div class="stage-toolbar">
+            <div class="mode-pills" role="tablist" aria-label="Knowledge 2 surfaces">
+              <button type="button" class="mode-pill" role="tab" aria-selected="true" data-k2-tab="graph">Night-Sky Graph (Graf)</button>
+              <button type="button" class="mode-pill" role="tab" aria-selected="false" data-k2-tab="brief">Actionable Brief (Özet)</button>
+              <button type="button" class="mode-pill" role="tab" aria-selected="false" data-k2-tab="doubletap">Double Tap (Right Cmd ×2)</button>
+            </div>
+
+            <div class="graph-filter-row" id="graph-search-wrap">
+              <input type="search" class="graph-search" id="graph-search-input" placeholder="Filter vault nodes..." aria-label="Filter knowledge graph nodes">
+            </div>
+          </div>
+
+          <!-- Subview 1: Interactive Night-Sky Constellation Graph -->
+          <div class="knowledge-subview is-active" id="k2-view-graph">
+            <div class="graph-canvas-wrap">
+              <canvas id="knowledge-graph-canvas" width="760" height="340" aria-label="Interactive night-sky knowledge graph"></canvas>
+              <div class="graph-legend">
+                <span>Click any node to inspect its Markdown page in ~/Pulse Knowledge</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subview 2: Actionable Brief (Bilgi › Özet) -->
+          <div class="knowledge-subview" id="k2-view-brief">
+            <div class="brief-list">
+              <div class="brief-row">
+                <span class="brief-tag">PAYMENT · DUE IN 2D</span>
+                <div>
+                  <strong>Apple Developer Program Annual Renewal ($99)</strong>
+                  <div style="font-size: 0.85rem; color: var(--ink-warm);">Source: Apple Mail receipt thread + Reminders · Timed notification scheduled</div>
+                </div>
+                <span class="tabular">May 14 · 09:00</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-tag jade">RELEASE · SHIPPED</span>
+                <div>
+                  <strong>Pulse 2.0.0 Sparkle Appcast &amp; Homebrew Tap Verification</strong>
+                  <div style="font-size: 0.85rem; color: var(--ink-warm);">Source: T3 Code thread (Pulse-tools2) + GitHub Releases</div>
+                </div>
+                <span class="tabular">Build 12</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-tag cornflower">APPOINTMENT · +4D</span>
+                <div>
+                  <strong>Kutu Yazılım Architecture Sync — Knowledge 2 MCP Schema</strong>
+                  <div style="font-size: 0.85rem; color: var(--ink-warm);">Source: WhatsApp Direct (90d window) + macOS Calendar (+31d horizon)</div>
+                </div>
+                <span class="tabular">14:30 TRT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subview 3: Double Tap (Right Cmd ×2) Simulator -->
+          <div class="knowledge-subview" id="k2-view-doubletap">
+            <div class="double-tap-box">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong>Try Double Tap Inline Voice Drafting</strong>
+                <span class="tabular" style="font-size: 0.8rem; color: var(--ink-warm);">Skips password fields · Restores clipboard</span>
+              </div>
+              <textarea class="reply-textarea" id="double-tap-textarea" aria-label="Simulated message reply field">Hey! Did we already sign the Sparkle appcast for Pulse 2.0 and update the Homebrew cask?</textarea>
+              <div class="double-tap-actions">
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">Tap Right Command twice in any macOS app to draft a reply in your voice using your local vault context.</span>
+                <div style="display: flex; gap: 8px;">
+                  <button type="button" class="btn-double-tap" id="btn-trigger-double-tap">Simulate Right Cmd ×2</button>
+                  <button type="button" class="t3-thread-btn" id="btn-reset-double-tap">Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Pane: Live Markdown Vault File Inspector -->
+        <aside class="vault-inspector" aria-label="Selected Vault Markdown File Preview">
+          <div>
+            <div class="vault-file-header">
+              <span id="vault-file-path">~/Pulse Knowledge/projects/pulse-2-0.md</span>
+              <span>Git rev: a94f21c</span>
+            </div>
+            <div class="vault-markdown-body" id="vault-file-content" style="margin-top: 14px;">
+              <h3 id="vault-node-title">Pulse 2.0 (macOS Companion)</h3>
+              <p id="vault-node-summary">
+                Published v2.0.0 (Build 12) to Kutu-Yazilim/pulse-releases with edSignature Sparkle appcast and Homebrew tap kutuyazilim/tap/kutu-pulse.
+              </p>
+              <p id="vault-node-links" style="color: var(--ink-warm);">
+                Linked nodes: [[Utku]] · [[T3 Code]] · [[Kutu Yazılım]] · [[Brew Tap]]
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 0.8rem; color: var(--ink-warm); margin-bottom: 6px;" class="tabular">VERIFIED LOCAL SOURCES (CHECKPOINTED)</div>
+            <div class="source-chips" id="vault-node-sources">
+              <span class="source-chip">T3 Code: Pulse-tools2</span>
+              <span class="source-chip">Dev Folder: ~/Developer/KutuYazilim</span>
+              <span class="source-chip">WhatsApp Direct (90d)</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section 3: Developer Cleaner & Interactive Block-Level Disk Map -->
+    <section class="surface-section" id="disk-cleaner">
+      <div class="section-header-bar">
+        <div class="section-header-copy">
+          <h2>Prune orphaned Git worktrees and build caches from an interactive block map.</h2>
+          <p>
+            Pulse's Cleaner knows how macOS developers actually lose disk space: stale git worktrees, Xcode DerivedData, Rust/Cargo targets, Flutter build artifacts, and package caches. Click any block below to stage or unstage it for reclamation.
+          </p>
+        </div>
+      </div>
+
+      <div class="disk-map-layout">
+        <div class="treemap-stage">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong class="tabular">Macintosh HD · Block-Level Telemetry Map</strong>
+            <span class="tabular" style="font-size: 0.8rem; color: var(--ink-warm);">Click blocks to toggle selection</span>
+          </div>
+
+          <div class="treemap-grid" role="group" aria-label="Interactive disk usage blocks">
+            <button type="button" class="disk-block cat-worktrees" data-disk-gb="18.4">
+              <div>
+                <strong>Orphaned Git Worktrees</strong>
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">14 detached worktree directories across 5 repos</span>
+              </div>
+              <span class="block-size">18.4 GB</span>
+            </button>
+
+            <button type="button" class="disk-block cat-xcode" data-disk-gb="14.1">
+              <div>
+                <strong>Xcode DerivedData &amp; Archives</strong>
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">Stale macOS 26 build intermediates</span>
+              </div>
+              <span class="block-size">14.1 GB</span>
+            </button>
+
+            <button type="button" class="disk-block cat-caches" data-disk-gb="9.6">
+              <div>
+                <strong>pnpm, Cargo &amp; Pub Caches</strong>
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">Unreferenced package tarballs</span>
+              </div>
+              <span class="block-size">9.6 GB</span>
+            </button>
+
+            <button type="button" class="disk-block cat-flutter" data-disk-gb="6.1">
+              <div>
+                <strong>Flutter &amp; Dart Build Artifacts</strong>
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">Old Ephemeral &amp; .dart_tool snapshots</span>
+              </div>
+              <span class="block-size">6.1 GB</span>
+            </button>
+
+            <button type="button" class="disk-block cat-logs" data-disk-gb="3.8">
+              <div>
+                <strong>Diagnostic &amp; Crash Logs</strong>
+                <span style="font-size: 0.85rem; color: var(--ink-soft);">~/Library/Logs &amp; symbolicated dumps</span>
+              </div>
+              <span class="block-size">3.8 GB</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="cleaner-summary-panel" aria-label="Storage reclamation summary">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px;">Selected for Safe Cleanup</h3>
+            <div class="reclaim-readout tabular" id="reclaim-total-readout">52.0 GB</div>
+            <p style="font-size: 0.85rem; color: var(--ink-soft); margin-top: 10px;" id="reclaim-status-copy">
+              5 developer categories staged. Active working trees and uncommitted changes are automatically protected.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button type="button" class="btn-reclaim" id="btn-run-cleaner">Reclaim Selected Space</button>
+            <button type="button" class="t3-thread-btn" id="btn-reset-cleaner" style="text-align: center;">Restore Demo Blocks</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section 4: Complete Specification Roster of 20+ Native Mac Tools -->
+    <section class="surface-section" id="tools-roster">
+      <div class="section-header-bar">
+        <div class="section-header-copy">
+          <h2>Twenty-two native Mac utilities built into the same lightweight binary.</h2>
+          <p>
+            Every utility in Pulse's <code class="tabular">Tools</code> tab runs natively without Electron bloat or separate subscriptions. Filter the specification roster by subsystem below.
+          </p>
+        </div>
+      </div>
+
+      <div class="tools-filter-bar" role="group" aria-label="Filter built-in Mac tools">
+        <button type="button" class="tool-filter-btn" aria-pressed="true" data-tool-filter="featured">Featured (8)</button>
+        <button type="button" class="tool-filter-btn" aria-pressed="false" data-tool-filter="all">All 22 Modules</button>
+        <button type="button" class="tool-filter-btn" aria-pressed="false" data-tool-filter="system">Menu Bar &amp; Windowing</button>
+        <button type="button" class="tool-filter-btn" aria-pressed="false" data-tool-filter="media">Notch, Audio &amp; Media</button>
+        <button type="button" class="tool-filter-btn" aria-pressed="false" data-tool-filter="capture">Capture, OCR &amp; Input</button>
+        <button type="button" class="tool-filter-btn" aria-pressed="false" data-tool-filter="dev">Developer, Brew &amp; AI</button>
+      </div>
+
+      <table class="tools-spec-table" aria-label="Pulse 2.0 built-in Mac tools specification">
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Access / Shortcut</th>
+            <th>Subsystem</th>
+            <th>Native Capability</th>
+          </tr>
+        </thead>
+        <tbody id="tools-table-body">
+          <tr data-tool-cat="media">
+            <td class="tool-name-cell">Dynamic Notch</td>
+            <td class="tool-trigger-cell">Top Center Rim Hover</td>
+            <td>Media &amp; HUD</td>
+            <td>Now Playing with Nusa-style LRCLIB synced lyrics, custom Volume/Brightness/Backlight HUDs, live stats wing, and drop Shelf.</td>
+          </tr>
+          <tr data-tool-cat="dev">
+            <td class="tool-name-cell">Double Tap</td>
+            <td class="tool-trigger-cell">Right Command ×2</td>
+            <td>Knowledge 2 AI</td>
+            <td>Drafts replies in your voice next to the cursor in any app; Return inserts, Esc cancels; never triggers in password fields.</td>
+          </tr>
+          <tr data-tool-cat="dev">
+            <td class="tool-name-cell">Operator &amp; Triggers</td>
+            <td class="tool-trigger-cell">Threshold Hold / Per-Task</td>
+            <td>AI Diagnostics</td>
+            <td>Wakes Claude when CPU/RAM/Swap thresholds hold; inspects processes and proposes user-approved fixes or GUI actions with a Stop button.</td>
+          </tr>
+          <tr data-tool-cat="dev">
+            <td class="tool-name-cell">Storage Cleaner</td>
+            <td class="tool-trigger-cell">Tools › Cleaner</td>
+            <td>Developer Disk</td>
+            <td>Interactive block-level disk map, git worktree pruning, Xcode/Cargo/Flutter cache cleanup, and scheduled free-space alerts.</td>
+          </tr>
+          <tr data-tool-cat="dev">
+            <td class="tool-name-cell">Homebrew Manager</td>
+            <td class="tool-trigger-cell">Tools › Brew</td>
+            <td>Developer Disk</td>
+            <td>Inspect installed formulae and casks, run background upgrades, and clean outdated cellar versions.</td>
+          </tr>
+          <tr data-tool-cat="capture" hidden>
+            <td class="tool-name-cell">Clipboard Ring</td>
+            <td class="tool-trigger-cell">Global Hotkey</td>
+            <td>Capture &amp; Input</td>
+            <td>Searchable local clipboard history for text, code snippets, hex colors, and images with instant paste.</td>
+          </tr>
+          <tr data-tool-cat="capture" hidden>
+            <td class="tool-name-cell">Screen OCR</td>
+            <td class="tool-trigger-cell">Region Selection</td>
+            <td>Capture &amp; Input</td>
+            <td>On-device Apple Vision text extraction from any screen region, video frame, or non-selectable PDF.</td>
+          </tr>
+          <tr data-tool-cat="capture" hidden>
+            <td class="tool-name-cell">Color Picker Loupe</td>
+            <td class="tool-trigger-cell">Tools › Picker</td>
+            <td>Capture &amp; Input</td>
+            <td>Pixel-accurate magnifier copying HEX, RGB, Display P3, or Flutter Color literals straight to clipboard.</td>
+          </tr>
+          <tr data-tool-cat="capture" hidden>
+            <td class="tool-name-cell">Screen Recorder &amp; Shot</td>
+            <td class="tool-trigger-cell">Tools › Recorder / Shot</td>
+            <td>Capture &amp; Input</td>
+            <td>High-frame-rate region or window recording and annotated screenshots saved directly to disk or Notch Shelf.</td>
+          </tr>
+          <tr data-tool-cat="media">
+            <td class="tool-name-cell">Per-App Mixer, Camera &amp; Music Block</td>
+            <td class="tool-trigger-cell">Tools › Media Suite</td>
+            <td>Media &amp; HUD</td>
+            <td>Independent per-app volume sliders, instant Notch camera framing mirror, and Bluetooth Apple Music auto-play blocker.</td>
+          </tr>
+          <tr data-tool-cat="system" hidden>
+            <td class="tool-name-cell">Awake</td>
+            <td class="tool-trigger-cell">Menu Bar Toggle</td>
+            <td>System &amp; Windowing</td>
+            <td>Prevents Mac idle sleep during long builds, model downloads, or presentations with timed auto-expiry.</td>
+          </tr>
+          <tr data-tool-cat="system" hidden>
+            <td class="tool-name-cell">Windows &amp; Switcher</td>
+            <td class="tool-trigger-cell">Keyboard Tiling</td>
+            <td>System &amp; Windowing</td>
+            <td>Snap windows into halves, thirds, or developer layouts and switch windows with live previews.</td>
+          </tr>
+          <tr data-tool-cat="system" hidden>
+            <td class="tool-name-cell">App Launcher &amp; Dock</td>
+            <td class="tool-trigger-cell">Tools › Launcher / Dock</td>
+            <td>System &amp; Windowing</td>
+            <td>Fast keyboard app launching and one-click macOS Dock visibility, delay, and spacer tuning.</td>
+          </tr>
+          <tr data-tool-cat="system" hidden>
+            <td class="tool-name-cell">Presentation &amp; Quit Guard</td>
+            <td class="tool-trigger-cell">Tools › Presentation</td>
+            <td>System &amp; Windowing</td>
+            <td>Hides desktop clutter/notifications during screen shares and guards critical apps against accidental Cmd+Q.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 5: Radical Transparency — Permissions, First-Launch & Read-Only MCP Server -->
+    <section class="surface-section" id="permissions">
+      <div class="section-header-bar">
+        <div class="section-header-copy">
+          <h2>Explicit macOS permissions and a bundled read-only MCP server.</h2>
+          <p>
+            Pulse asks only for the permissions required by the features you turn on, stores your knowledge vault in plain Markdown on your disk, and ships <code class="tabular">pulse-mcp</code> inside the app bundle so Claude Desktop, Claude Code, and Cursor can query your vault safely.
+          </p>
+        </div>
+      </div>
+
+      <div class="architecture-split">
+        <table class="permissions-table" aria-label="macOS permissions transparency table">
+          <thead>
+            <tr>
+              <th>macOS Permission</th>
+              <th>Why Pulse Uses It</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Keychain Access</strong></td>
+              <td>Reads your Claude Code sign-in to display live subscription usage limits. Click <strong>Always Allow</strong> once so macOS does not prompt on every refresh.</td>
+            </tr>
+            <tr>
+              <td><strong>Full Disk Access</strong></td>
+              <td>Lets Knowledge 2 read local Apple Mail and Messages databases on your Mac, and lets Cleaner measure developer caches accurately.</td>
+            </tr>
+            <tr>
+              <td><strong>Calendar &amp; Reminders</strong></td>
+              <td>Includes your -7 to +31 day schedule and due items in nightly Knowledge 2 Brief cards.</td>
+            </tr>
+            <tr>
+              <td><strong>Accessibility &amp; Screen Recording</strong></td>
+              <td>Powers Double Tap (Right Cmd ×2) inline reply insertion, custom HUD replacement, and per-task Operator actions.</td>
+            </tr>
+            <tr>
+              <td><strong>Privileged Helper (Admin Prompt)</strong></td>
+              <td>Installed once from Settings to kill root processes, purge inactive RAM, and wake the Mac at 03:00 for nightly learning.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="mcp-card">
+          <h3>Connect Claude Code &amp; Cursor via pulse-mcp</h3>
+          <p style="font-size: 0.95rem; color: var(--ink-soft);">
+            Pulse bundles a read-only Model Context Protocol server at <code class="tabular">/Applications/Pulse.app/Contents/MacOS/pulse-mcp</code>. It exposes <code class="tabular">pulse://knowledge/index</code> plus search, status, and brief tools—and cannot edit files or run shell commands.
+          </p>
+          <pre class="code-snippet"><code>{
+  "mcpServers": {
+    "pulse-knowledge": {
+      "command": "/Applications/Pulse.app/Contents/MacOS/pulse-mcp"
+    }
+  }
+}</code></pre>
+          <div style="padding-top: 8px; border-top: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--ink-soft);">
+            <strong style="color: var(--ink-warm);">First Launch on macOS 26:</strong> Because Pulse is distributed directly outside the Mac App Store, right-click <strong>Pulse.app</strong> → <strong>Open</strong> (or approve in <em>System Settings › Privacy &amp; Security › Open Anyway</em>) on first launch. Subsequent updates install automatically via Sparkle.
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing Conversion Anchor -->
+      <div class="closing-anchor">
+        <div class="closing-copy">
+          <h2>Install Pulse 2.0 on your Mac today.</h2>
+          <p>
+            Free, open-source under the MIT License, and built natively for macOS 26. Download the signed disk image or install from our Homebrew tap in one command.
+          </p>
+        </div>
+
+        <div class="cta-button-row">
+          <a class="btn-dmg" href="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.0.0/Pulse-2.0.0.dmg">
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Pulse-2.0.0.dmg</span>
+          </a>
+
+          <button type="button" class="btn-brew" id="copy-brew-btn-footer" data-command="brew install --cask kutuyazilim/tap/kutu-pulse">
+            <span>brew install --cask kutuyazilim/tap/kutu-pulse</span>
+            <span class="brew-copy-badge" id="brew-copy-status-footer">Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div>Pulse 2.0.0 (Build 12) · Crafted by Kutu Yazılım · MIT License</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.0.0">GitHub Release v2.0.0</a>
+          <a href="https://raw.githubusercontent.com/Kutu-Yazilim/pulse-releases/main/appcast.xml">Sparkle Appcast Feed</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
