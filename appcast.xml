@@ -6,6 +6,43 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 2.2.0</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.2.0</link>
+      <pubDate>Sun, 08 Nov 2026 20:57:08 +0000</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>2.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 2.2.0 — the people in your life with per-chat digests, your companies and which projects belong to each, no more false project links; Ollama no longer hangs, no repeated keychain prompts
+- refactor(knowledge): the night's synthesis step in its own class
+- fix(people): two kept windows make a real relationship; a fuller person page title counts
+- fix(people): digest calls go round the top chats; a window read again is not folded twice
+- fix(work): projects resolve by folder; one organisation per project; marks that cannot be done stop waking synthesis
+- feat(work): generic topics outside projects stay topics; no nightly synthesis for private org pages
+- feat(work): organisation pages, Part of links and org-scoped graph edges
+- chore(people): reuse the relation hints label; drop an unused test import
+- feat(people): synthesis writes people pages from stats and chat digests
+- feat(nightly): the chat digest step after triage, counted in the report
+- feat(entities): organisations from git owners and folders; one-time work migration
+- feat(people): rolling chat digests written by the local model
+- feat(store): chat_digests table, one rolling digest per top chat
+- feat(store): orgs and page_rewrites tables, entity repo roots
+- feat(people): ~150-word specific summaries for chats, threads and mail; top contacts' DMs kept for any substance
+- feat(sources): read the origin remote from the git config file, and the user's commit share
+- feat(people): chat sources read the user's top chats first
+- feat(entities): a project is its repo root; no generic or shared aliases
+- docs: Knowledge 2.2 spec — people digests, organisations, no false links
+- fix(learning): read Ollama's output so it never hangs on a full log pipe
+- fix(usage): read Claude Code's token through the security tool so macOS stops asking
+
+SHA-256: `79bc1de448b2e286342b71a77c0ad8167ab711d469abb7db54d47659fd3ec539`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.2.0/Pulse-2.2.0.dmg" length="37441286" type="application/octet-stream" sparkle:edSignature="bCYwKaOwqndBxBj/eO6ivNz0dXSUvJsDC0REmb3LfDS+UZZaJ8F/8bVsFweNF6b6cF4Za5t2gTdobLSu9w95DA=="/>
+    </item>
+    <item>
       <title>Pulse 2.1.0</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.1.0</link>
       <pubDate>Thu, 05 Nov 2026 18:07:28 +0000</pubDate>
