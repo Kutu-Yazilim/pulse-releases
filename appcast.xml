@@ -6,6 +6,29 @@
     <description>Pulse for macOS: release feed for in-app updates.</description>
     <language>en</language>
     <item>
+      <title>Pulse 2.3.0</title>
+      <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.3.0</link>
+      <pubDate>Sun, 08 Nov 2026 22:28:00 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>2.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:fullReleaseNotesLink>https://github.com/Kutu-Yazilim/pulse-releases/releases</sparkle:fullReleaseNotesLink>
+      <description sparkle:format="markdown"><![CDATA[## Changes
+
+- chore: 2.3.0 — ChatGPT subscription as Pulse's AI (through the Codex CLI), faster Stop, Pulse's tool token out of the process list
+- fix(agent): Codex setup failures end the run, stop during start, keychain store status, CODEX_HOME fallback, race-safe auth link, private prompt files
+- fix(agent): the Claude run token reaches pulse-mcp through env, never argv
+- fix(agent): stop kills the CLI first; a stream error or early end no longer leaves a run running
+- fix(agent): a Codex tool call with status failed (isError) is a tool error, not a success
+- fix(agent): a stop during Codex setup keeps codex from starting
+- feat(agent): ChatGPT subscription as an agent provider through the Codex CLI
+
+SHA-256: `e921360b95907a1124088a7fffbf511f4307a2c524958f9c02da25a06e7afa08`
+
+]]></description>
+      <enclosure url="https://github.com/Kutu-Yazilim/pulse-releases/releases/download/v2.3.0/Pulse-2.3.0.dmg" length="37438727" type="application/octet-stream" sparkle:edSignature="owKI9j5Qce/D7/V5GBpxym7YaE6NGxUVxY/YX8QfeWvDn6YFJIk/xKiqGc1ryB2btxSKZ0dIxRIHt2Hxg4enDg=="/>
+    </item>
+    <item>
       <title>Pulse 2.2.0</title>
       <link>https://github.com/Kutu-Yazilim/pulse-releases/releases/tag/v2.2.0</link>
       <pubDate>Sun, 08 Nov 2026 20:57:08 +0000</pubDate>
